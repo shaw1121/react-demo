@@ -88,8 +88,8 @@ module.exports = {
       test: /\.json$/,
       loader: 'json'
     }, {
-      test: /\.html$/,
-      loader: 'html'
+      test: /\.html$/, // 标识出应该被对应的loader进行转换的某个或某些文件
+      loader: 'html'   // 表示进行转换时，应该使用哪个loader
     }, {
       test: /\.(png|jpe?g|gif|svg)$/,
       loader: 'url',
