@@ -10,7 +10,7 @@ import LogoutDropdown from './LogoutDropdown'
   ({ userData }) => ({ userData }),
   require('ACTION/user').default
 )
-export default class Navbar extends Component {
+class Navbar extends Component {
   componentWillMount () {
     console.info('[Navbar] 初始化：检查用户是否已经登录')
     console.info('[TIPS] 由于有Redux Logger，故之后就不手动打印动作了')
@@ -39,7 +39,7 @@ export default class Navbar extends Component {
                 <span className="icon-bar"></span>
               </button>
               <Link to='/' className="navbar-brand">
-                React Demo
+                Message Board
               </Link>
             </div>
             <div className="collapse navbar-collapse" id="nav-collapse">
@@ -71,3 +71,5 @@ export default class Navbar extends Component {
     )
   }
 }
+
+export default Navbar   
